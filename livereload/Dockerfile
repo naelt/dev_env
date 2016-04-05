@@ -37,12 +37,6 @@ RUN curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.29.0/install.sh
 ENV NODE_PATH $NVM_DIR/versions/node/v$NODE_VERSION/lib/node_modules
 ENV PATH      $NVM_DIR/versions/node/v$NODE_VERSION/bin:$PATH
 
-<<<<<<< HEAD
-#VOLUME ["/home/core/share"]
-=======
-VOLUME ["/home/core/share"]
->>>>>>> 37757f7fe93c57e7bc340fbe197c7b391936995c
-
 RUN npm install -g grunt-cli
 
 ADD data /var/app/livereload
